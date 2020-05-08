@@ -1,0 +1,57 @@
+<div class="container" id="form">
+    <div class="row">
+    <div class="col-6" id="line">
+    <form>
+        <div class='form-group'>
+        <input type='text' name='poke-name' class='form-control' #search placeholder="Enter Pokemon Name">
+        </div>
+        <div class="row">
+            <div class="col">
+                <button (click)="getPokeByName(search.value)" type="submit" class='btn btn-primary' id="find"> Find Pokemon </button>
+            </div>
+            <div class="col">
+                <button (click)="getRandomPoke()" type="submit" class='btn btn-primary' id="rand"> Random Pokemon </button>
+            </div>
+        </div>
+    </form>
+    </div>
+    <div class="col-5" id="display">
+        <div class="col p-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <h4>Name : </h4>
+                    </div>
+                    <div *ngIf="pokeData">
+                        <h4>{{pokeData[0].pokemon_name}}</h4>
+                    </div>
+                </div>
+                <div class="row" id="atk">
+                    <div class="col-5">
+                        <h4>Attack : </h4>
+                    </div>
+                    <div *ngIf="pokeData">
+                        <h4>{{pokeData[0].base_attack}}</h4>
+                    </div>
+                </div>
+                <div class="row" id="def">
+                    <div class="col-5">
+                        <h4>Defense : </h4>
+                    </div>
+                    <div *ngIf="pokeData">
+                        <h4>{{pokeData[0].base_defense}}</h4>
+                    </div>
+                </div>
+                <div class="row" id="stam">
+                    <div class="col-5">
+                        <h4>Stamina : </h4>
+                    </div>
+                    <div *ngIf="pokeData">
+                        <h4>{{pokeData[0].base_stamina}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

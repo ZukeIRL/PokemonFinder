@@ -1,0 +1,16 @@
+#container{
+    border: 3px solid rgb(19, 180, 185);
+    border-radius: 75px;
+}
+#title{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 300%;
+}
+body{
+    background-image: url('D:/Angular Projects/poke-api/images/pokemon.jpg');
+    background-size: 50%;
+}
+#space{
+    margin-top: 50px;
+}

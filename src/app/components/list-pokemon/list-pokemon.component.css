@@ -1,0 +1,18 @@
+#headers{
+    margin-top: 12px;
+}
+
+#center{
+    text-align: center;
+}
+
+.evenRow{
+    background-color: hsl(202, 54%, 75%);
+}
+.oddRow{
+    background-color: rgb(195, 197, 88);
+}
+
+button{
+    border-style: none;
+}

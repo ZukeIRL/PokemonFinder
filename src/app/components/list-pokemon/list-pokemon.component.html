@@ -1,0 +1,41 @@
+<div class="container bg-dark" id="center">
+
+<div class="row text-light">
+    <div class="col-3">
+     <h5>Pokemon ID </h5>
+    </div>
+    <div class="col-3">
+        <h5>Pokemon Name</h5>
+    </div>
+    <div class="col-2">
+        <h5>Attack &#9876;</h5>
+    </div>
+    <div class="col-2">
+        <h5>Defense &#9929;</h5>
+    </div>
+    <div class="col-2">
+        <h5>Stamina &#9889;</h5>
+    </div>
+</div>
+
+<div *ngFor="let pokemon of uniqueListPoke; let odd=odd; let even=even; let i=index;"
+[ngClass]="{oddRow: odd, evenRow: even}">
+    <div class="row" id="headers">
+        <div class="col-3" id="id">
+            <h4>{{pokemon.pokemon_id}}</h4>
+        </div>
+        <div class="col-3">
+            <h4>{{pokemon.pokemon_name}}</h4>
+        </div>
+        <div class="col-2">
+            <h4>{{pokemon.base_attack}}</h4>
+        </div>
+        <div class="col-2">
+            <h4>{{pokemon.base_defense}}</h4>
+        </div>
+        <div class="col-2">
+            <h4>{{pokemon.base_stamina}}</h4>
+        </div>
+    </div>
+</div>
+</div>
